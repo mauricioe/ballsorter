@@ -1,17 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+
+import Board from './components/Board';
+
+import './styles/app.css';
+
+class BallSort extends React.Component{
+    render(){
+        return(
+            <div className="main">
+                <div><img src= {'./images/logo-short.jpg'} alt="come on" /></div>
+                <div className="ui container" >
+                    <Board 
+                        numberOfPipes= {5}
+                    />
+                </div>
+            </div>
+        );
+    }
+}
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <BallSort />,
+    document.getElementById('root')
 );
-
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
