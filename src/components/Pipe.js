@@ -1,35 +1,51 @@
 import React from 'react';
 
-import Ball from './Ball';
-
 class Pipe extends React.Component{
     
     clicked(){
         this.props.onClick(this.props.index)
     }
 
+    renderDivider(index, color){
+        if (index === 1){
+            return (
+                <div>
+                    <div className="ui center aligned grid">
+                    <div className="ui divider"></div> 
+                    </div>
+                    <div className="ui center aligned grid">
+                    <label className= {'ui inverted empty massive circular empty label '.concat(color)}></label>
+                    </div>
+                </div>
+            );
+        }else{
+            return (<div className="ui center aligned grid">
+                        <label className= {'ui inverted empty massive circular empty label '.concat(color)}></label>
+                    </div>
+                    );
+        }
+    }
+
     renderBalls(){
         
         return this.props.colors.map((color, index) =>{
             
-            return <div key= {index}  style={{display: "flex", marginRight: "auto", marginLeft: "auto"}} > 
-                        <Ball
-                            color= {color}
-                            index= {index}
-                        /> 
-                    </div>;
-                })
+            return (
+                     <div key= {index}> 
+                            {this.renderDivider(index, color)}                            
+                            <br></br>
+                            <br></br>
+                            <br></br>                                           
+                    </div>
+                   );});
         }
 
     render(){
         return(
                     <div className="column" onClick= {() => this.clicked()}>
-                         < Ball
-                            color= {this.props.ballRaised}
-                            index = "10"
-                        />    
 
                         {this.renderBalls()}                                                                                           
+
                     </div>
         );}
 }
