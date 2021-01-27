@@ -1,0 +1,73 @@
+[{
+    "level_number": 1,
+    "pipes": [
+        ["orange", "orange", "orange"],
+        ["orange"],
+        ["green", "green"]
+    ]
+    },
+    {
+    "level_number": 2,
+    "pipes":[
+        ["orange", "blue", "orange", "blue"],
+        ["blue", "orange", "blue", "orange"],
+        []
+        ]
+    },
+    {
+    "level_number": 3,
+    "pipes":[
+        ["blue", "red", "orange", "blue"],
+        ["blue", "red", "orange", "orange"],
+        [],
+        []
+        ]
+    },
+    {
+    "level_number": 4,
+    "pipes":[
+        ["orange", "orange", "red", "blue"],
+        ["red", "blue", "red", "blue"],
+        ["orange", "red", "blue", "orange"],
+        [],
+        []
+        ]
+    },
+    {
+    "level_number": 5,
+    "pipes":[
+        ["pink", "blue", "orange", "green"],
+        ["pink", "blue", "green", "orange"],
+        ["red", "blue", "green", "orange"],
+        ["blue", "red", "pink", "orange"],
+        ["blue", "red", "green", "green"],
+        [],
+        []
+        ]
+    },
+    {
+    "level_number": 6,
+    "pipes":[
+        ["teal", "blue", "blue", "grey"],
+        ["black", "blue", "olive", "yellow"],
+        ["brown", "green", "green", "green"],
+        ["grey", "brown", "violet", "black"],
+        ["red", "teal", "yellow", "olive"],
+        ["grey", "violet", "pink", "teal"],
+        ["pink", "orange", "green", "teal"],
+        ["black", "orange", "violet", "red"],
+        ["pink", "black", "grey", "yellow"],
+        ["olive", "blue", "olive", "orange"],
+        ["brown", "brown","yellow", "red"],
+        ["pink", "orange", "red", "violet"],
+        [],
+        []
+    ]
+    },{
+        "level_number": 7,
+        "pipes": [
+            ["orange", "orange", "orange"],
+            ["orange"]
+        ]
+        }
+   ]
