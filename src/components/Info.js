@@ -12,7 +12,7 @@ const Info = () => {
 		return (
 			<div className="ui info message">
 				<div className="header">
-					<p>Instructions:</p>
+					<p>How to play:</p>
 				</div>
 				<ul className="list">
 					<li>
