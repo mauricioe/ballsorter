@@ -1,17 +1,17 @@
-This is not a deployment, this is to test the app.
+### To test the app, you should do:
 
-To clone the project:
+### To clone the project:
 
-### 'git clone https://www.github.com/metchevest/ballsorter'
+`git clone https://www.github.com/metchevest/ballsorter`
 
-To build the container:
+### To build the container:
 
-### 'docker build -t ball:dev'
+`docker build -t ball:dev`
 
-To run the project:
+### To run the project:
 
-### 'docker run -it -p 3001:3000 ball:dev .'
+`docker run -it -p 3001:3000 ball:dev .`
 
-To access:
+### To access:
 
-### http://localhost:3001
+`http://localhost:3001`
