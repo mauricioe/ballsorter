@@ -2,8 +2,7 @@
     "level_number": 1,
     "pipes": [
         ["orange", "orange", "orange"],
-        ["orange"],
-        ["green", "green"]
+        ["orange"]
     ]
     },
     {
@@ -19,6 +18,7 @@
     "pipes":[
         ["blue", "red", "orange", "blue"],
         ["blue", "red", "orange", "orange"],
+        ["red", "orange", "blue", "red"],
         [],
         []
         ]
@@ -38,7 +38,7 @@
     "pipes":[
         ["pink", "blue", "orange", "green"],
         ["pink", "blue", "green", "orange"],
-        ["red", "blue", "green", "orange"],
+        ["red", "orange", "red", "pink"],
         ["blue", "red", "pink", "orange"],
         ["blue", "red", "green", "green"],
         [],
@@ -63,11 +63,5 @@
         [],
         []
     ]
-    },{
-        "level_number": 7,
-        "pipes": [
-            ["orange", "orange", "orange"],
-            ["orange"]
-        ]
-        }
+    }
    ]

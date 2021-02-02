@@ -94,32 +94,53 @@ class Board extends React.Component {
 		});
 	}
 
+	renderInput() {
+		return (
+			<div>
+				<select
+					value={this.state.current_level}
+					onChange={(e) => {
+						this.handleChange(e);
+					}}
+				>
+					{this.getAllLevels().map((level) => {
+						return (
+							<option key={level.level_number} value={level.level_number}>
+								{level.level_number}
+							</option>
+						);
+					})}
+				</select>
+			</div>
+		);
+	}
+
+	renderInstructionButton() {
+		return (
+			<div className="ui labeled button">
+				<div className="ui red button">
+					<i className="question circle icon big"></i>
+				</div>
+				<label
+					className="ui basic red left pointing label"
+					onClick={() => console.log("Here we go again")}
+				>
+					Instructions
+				</label>
+			</div>
+		);
+	}
+
 	render() {
 		return (
-			<div className="padding-top ">
+			<div className="padding-top">
 				<div className="ui equal width grid">{this.renderPipes()}</div>
 				<div className="ui center aligned grid">
 					<div className="ui large form">
 						<div className="one fields">
 							<div className="field">
 								<label>Select the Level:</label>
-								<select
-									value={this.state.current_level}
-									onChange={(e) => {
-										this.handleChange(e);
-									}}
-								>
-									{this.getAllLevels().map((level) => {
-										return (
-											<option
-												key={level.level_number}
-												value={level.level_number}
-											>
-												{level.level_number}
-											</option>
-										);
-									})}
-								</select>
+								{this.renderInput()}
 							</div>
 						</div>
 					</div>
