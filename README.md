@@ -3,6 +3,7 @@
 ### Clone the project:
 
 `git clone https://www.github.com/metchevest/ballsorter`
+`cd ballsorter`
 
 ### Build the container:
 
